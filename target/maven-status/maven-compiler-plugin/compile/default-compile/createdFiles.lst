@@ -1,0 +1,7 @@
+parser\Parser.class
+parser\DomParser.class
+generated\PojoType.class
+parser\DeliveryAttributes.class
+parser\JaxbParser.class
+main\Driver.class
+generated\ClientType.class

@@ -1,0 +1,33 @@
+<Delivery>
+  <deliveryId>1</deliveryId>
+  <deliveryPrice>999.99</deliveryPrice>
+  <address>some street of some city</address>
+  <courier>
+    <courierId>1</courierId>
+    <age>30</age>
+    <firstName>Іван</firstName>
+    <lastName>Чорнозем</lastName>
+    <phoneNumber>999999999</phoneNumber>
+    <employedAt>2022-01-01</employedAt>
+    <vehicle>
+      <vehicleName>Some car</vehicleName>
+    </vehicle>
+  </courier>
+  <client>
+    <clientId>1</clientId>
+    <clientFirstName>Стів</clientFirstName>
+    <clientLastName>Рембо</clientLastName>
+    <clientAge>20</clientAge>
+    <phone>888888888</phone>
+    <email>someemail@gmail.com</email>
+  </client>
+  <item>
+    <itemId>1</itemId>
+    <itemName>item</itemName>
+    <price>299.99</price>
+    <weight>23.1</weight>
+  </item>
+  <deliveryStart>2022-01-01T00:00:00</deliveryStart>
+  <deliveryEnd>2022-12-12T23:59:59</deliveryEnd>
+  <finished>true</finished>
+</Delivery>

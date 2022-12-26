@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Delivery" type="DeliveryType"/>
+  <xs:complexType name="vehicleType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="vehicleName"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="courierType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="age"/>
+      <xs:element type="xs:string" name="firstName"/>
+      <xs:element type="xs:string" name="lastName"/>
+      <xs:element type="xs:string" name="phoneNumber"/>
+      <xs:element type="xs:date" name="employedAt"/>
+      <xs:element type="vehicleType" name="vehicle"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clientType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="clientFirstName"/>
+      <xs:element type="xs:string" name="clientLastName"/>
+      <xs:element type="xs:byte" name="clientAge"/>
+      <xs:element type="xs:string" name="phone"/>
+      <xs:element type="xs:string" name="email"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="itemName"/>
+      <xs:element type="xs:float" name="price"/>
+      <xs:element type="xs:float" name="weight"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DeliveryType">
+    <xs:sequence>
+      <xs:element type="xs:float" name="deliveryPrice"/>
+      <xs:element type="xs:string" name="address"/>
+      <xs:element type="courierType" name="courier"/>
+      <xs:element type="clientType" name="client"/>
+      <xs:element type="itemType" name="item"/>
+      <xs:element type="xs:dateTime" name="deliveryStart"/>
+      <xs:element type="xs:dateTime" name="deliveryEnd"/>
+      <xs:element type="xs:boolean" name="finished"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
